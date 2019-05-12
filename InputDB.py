@@ -10,14 +10,14 @@ from TyphoonList import *
 from TyphoonListfunc import *
 
 # db_connect information
-host = '168.131.39.95'
-port = 3306
-user = 'root'
-passwd = 'jslab0963'
-db = 'Typhoons'
+_host = '168.131.39.95'
+_port = 3306
+_user = 'root'
+_passwd = 'jslab0963'
+_db = 'TYP'
 
 # access
-db = pymysql.connect(host, port, user, passwd, db, charset='utf8')
+db = pymysql.connect(host=_host, port=_port, user=_user, passwd=_passwd, db=_db, charset='utf8')
 
 # 커서 가져오기
 cursor = db.cursor()
